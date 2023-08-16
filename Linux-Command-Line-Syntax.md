@@ -81,6 +81,19 @@ esac
 
 ## Commands
 
+**apt Utility**<br>
+A command line utility for managing deb packages in linux. See Link. It is often installed by default on Ubuntu, Debian, and other Linux Distrubutions. The utility typically shows work being done by the utility in the terminal.**apt install \_\_**<br>
+Installs an application that is known by the apt utility.
+**apt purge \_\_**<br>
+Completely uninstalls an application that is known by the apt utility including app configuration files.
+--auto-remove removes any dependencies that are no longer being used by the program being purged
+**apt remove \_\_**<br>
+Uninstalls an application that is knows by the apt utility, but keeps configuration files in the case you may want to install the application again later. This will make a future reinstall of the software easier.
+**apt list --installed**<br>
+Shows a list of installed software in the command line.
+**apt clean**<br>
+Removes downloaded archived files.
+
 **bg %\_\_**(incorrect, needs more work)<br>
 Moves a process to background, given by a number after a percent. This number can be determined using the jobs command.<br>
 
@@ -107,6 +120,10 @@ Copy a file or directory, given as an argument.<br>
 **df**<br>
 Display the ammount of disk space available.<br>
 
+**dpkg Utility**<br>
+A command line tool for managing Debian system packages. See Link.
+**dpkg --list**<br>
+
 **echo __**<br>
 Print something to terminal, given as an argument.<br>
 
@@ -122,8 +139,8 @@ Shows a list of ongoing or paused threads<br>
 **kill -9 \_**<br>
 Will kill a process given a process number as an argument<br>
 -9 means just kill, no letting the process shut off like it wants or asking the process to shut off.<br>
-I can't end the processes of others unless root, only mine.<br>
-{I have found that if the process number has a 0 in it, you need to wrap the process number in ""}<br>
+By default one can only end their own process. You can end the processes of others if you are root.<br>
+If the process number has a 0 in it, you may need to wrap the process number in ""<br>
 
 **ls \-\_**<br>
 Returns a list of files and directories in the current directory<br>
