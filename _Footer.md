@@ -1,1 +1,0 @@
-[Home](http://euclid.nmu.edu:3000/ovoisine/CS326/wiki)
